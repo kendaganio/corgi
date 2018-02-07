@@ -1,0 +1,67 @@
+html, body,
+p, ol, ul, li,
+dl, dt, dd,
+blockquote,
+figure, fieldset,
+legend, textarea,
+pre, iframe,
+hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0.5rem 0.5rem 1rem;
+  min-width: 100%;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+  margin: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=corgi.css.map */

@@ -1,0 +1,29 @@
+{
+  "name": "corgi",
+  "version": "0.0.1",
+  "description": "The css equivalent of a small and stupid log of fur.",
+  "main": "corgi.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass --output-style expanded --source-map true corgi.sass css/corgi.css",
+    "start": "npm run build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kendaganio/corgi.git"
+  },
+  "keywords": [
+    "css",
+    "flexbox",
+    "corgi"
+  ],
+  "author": "Ken-Lauren Daganio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kendaganio/corgi/issues"
+  },
+  "homepage": "https://github.com/kendaganio/corgi#readme",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
