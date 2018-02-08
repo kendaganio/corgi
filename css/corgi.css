@@ -12,11 +12,11 @@ hr, h1, h2, h3, h4, h5, h6 {
 
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 * {
   box-sizing: inherit;
-  flex: 1;
 }
 
 *:before, *:after {
@@ -26,35 +26,42 @@ html {
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem 0.5rem 1rem;
-  flex: 0 0 100%;
+  font-weight: normal;
 }
 
 h1 {
-  font-size: 3.2rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
   font-size: 2.5rem;
 }
 
-h4 {
-  font-size: 2.2rem;
+h1 > small {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.5em;
+  font-weight: normal;
 }
 
-h5 {
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
   font-size: 2rem;
 }
 
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
 h6 {
-  font-size: 1rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
@@ -85,7 +92,8 @@ h6 {
 
 .columns.demo .column {
   background: pink;
-  height: 80px;
+  flex: 1;
+  height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
