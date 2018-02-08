@@ -11,23 +11,20 @@ hr, h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 16px;
 }
 
 * {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   color: rgba(0, 0, 0, 0.8);
   font-size: 1rem;
 }
@@ -37,52 +34,6 @@ code {
   padding: 0.2rem 0.5rem;
   font-size: 0.9rem;
   border-radius: 0.3rem;
-}
-
-button.button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  font-size: inherit;
-  border-radius: 0.4rem;
-  line-height: 1.5rem;
-  background-color: #eee;
-  border-color: #eee;
-}
-
-button.button:hover {
-  background: #e1e1e1;
-}
-
-button.button:active {
-  background: #d5d5d5;
-}
-
-button.button.-primary {
-  background-color: #0984e3;
-  border-color: #0984e3;
-  color: white;
-}
-
-button.button.-primary:hover {
-  background: #0876ca;
-}
-
-button.button.-primary:active {
-  background: #0767b2;
-}
-
-button.button.-danger {
-  background-color: #d63031;
-  border-color: #d63031;
-  color: white;
-}
-
-button.button.-danger:hover {
-  background: #c52728;
-}
-
-button.button.-danger:active {
-  background: #b02324;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -128,15 +79,10 @@ h6 {
 }
 
 .columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   clear: both;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .columns > .column {
@@ -152,19 +98,122 @@ h6 {
 }
 
 .columns.demo .column {
-  background: pink;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  background: #ff793f;
+  color: white;
+  flex: 1;
   height: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
+
+button.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  border-radius: 0.4rem;
+  line-height: 1.5rem;
+  transition: background-color .15s ease-in-out;
+  background-color: #eee;
+  border-color: #eee;
+}
+
+button.button:hover {
+  background: #e1e1e1;
+}
+
+button.button:active {
+  background: #d5d5d5;
+}
+
+button.button.-primary {
+  background-color: #34ace0;
+  border-color: #34ace0;
+  color: white;
+}
+
+button.button.-primary:hover {
+  background: #21a2d9;
+}
+
+button.button.-primary:active {
+  background: #1e91c3;
+}
+
+button.button.-primary-outline {
+  background-color: transparent;
+  border-color: #34ace0;
+  color: #34ace0;
+}
+
+button.button.-primary-outline:hover {
+  background: #21a2d9;
+  color: white;
+}
+
+button.button.-primary-outline:active {
+  background: #1e91c3;
+  color: white;
+}
+
+button.button.-danger {
+  background-color: #ff5252;
+  border-color: #ff5252;
+  color: white;
+}
+
+button.button.-danger:hover {
+  background: #ff3939;
+}
+
+button.button.-danger:active {
+  background: #ff1f1f;
+}
+
+button.button.-danger-outline {
+  background-color: transparent;
+  border-color: #ff5252;
+  color: #ff5252;
+}
+
+button.button.-danger-outline:hover {
+  background: #ff3939;
+  color: white;
+}
+
+button.button.-danger-outline:active {
+  background: #ff1f1f;
+  color: white;
+}
+
+button.button.-success {
+  background-color: #33d9b2;
+  border-color: #33d9b2;
+  color: white;
+}
+
+button.button.-success:hover {
+  background: #26cca5;
+}
+
+button.button.-success:active {
+  background: #22b794;
+}
+
+button.button.-success-outline {
+  background-color: transparent;
+  border-color: #33d9b2;
+  color: #33d9b2;
+}
+
+button.button.-success-outline:hover {
+  background: #26cca5;
+  color: white;
+}
+
+button.button.-success-outline:active {
+  background: #22b794;
+  color: white;
+}
+
 /*# sourceMappingURL=corgi.css.map */

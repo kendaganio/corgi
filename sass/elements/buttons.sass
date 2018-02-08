@@ -1,0 +1,56 @@
+@mixin button($color) 
+  display: inline-block
+  padding: 0.5rem 1rem
+  font-size: inherit
+  border-radius: 0.4rem
+  line-height: 1.5rem
+  transition: background-color .15s ease-in-out
+
+@mixin buttonColorize($color)
+  background-color: $color
+  border-color: $color
+
+  &:hover
+    background: darken($color, 5%)
+
+  &:active
+    background: darken($color, 10%)
+
+@mixin outlineColorize($color) 
+  background-color: transparent
+  border-color: $color
+  color: $color
+
+  &:hover
+    background: darken($color, 5%)
+    color: white
+
+  &:active
+    background: darken($color, 10%)
+    color: white
+
+button.button
+  @include button($button-default)
+  @include buttonColorize($button-default)
+
+  &.-primary
+    @include buttonColorize($primary)
+    color: white
+
+  &.-primary-outline
+    @include outlineColorize($primary)
+
+  &.-danger
+    @include buttonColorize($danger)
+    color: white
+
+  &.-danger-outline
+    @include outlineColorize($danger)
+
+  &.-success
+    @include buttonColorize($success)
+    color: white
+
+  &.-success-outline
+    @include outlineColorize($success)
+
