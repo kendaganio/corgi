@@ -29,6 +29,69 @@ body {
   font-size: 1rem;
 }
 
+code {
+  background: #eee;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 0.3rem;
+}
+
+button.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  background-color: #eee;
+  border: 2px solid #eee;
+  border-radius: 0.4rem;
+  line-height: 1.5rem;
+}
+
+button.button:hover {
+  background: #e1e1e1;
+}
+
+button.button:active {
+  background: #d5d5d5;
+}
+
+button.button.-primary {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  background-color: #0984e3;
+  border: 2px solid #0984e3;
+  border-radius: 0.4rem;
+  line-height: 1.5rem;
+  color: white;
+}
+
+button.button.-primary:hover {
+  background: #0876ca;
+}
+
+button.button.-primary:active {
+  background: #0767b2;
+}
+
+button.button.-danger {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  background-color: #d63031;
+  border: 2px solid #d63031;
+  border-radius: 0.4rem;
+  line-height: 1.5rem;
+  color: white;
+}
+
+button.button.-danger:hover {
+  background: #c52728;
+}
+
+button.button.-danger:active {
+  background: #b02324;
+}
+
 h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem 0.5rem 1rem;
   font-weight: normal;

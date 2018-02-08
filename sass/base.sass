@@ -22,3 +22,36 @@ body
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
   color: $font-color
   font-size: 1rem
+
+code
+  background: $gray
+  padding: 0.2rem 0.5rem
+  font-size: 0.9rem
+  border-radius: 0.3rem
+
+@mixin button($color) 
+  display: inline-block
+  padding: 0.5rem 1rem
+  font-size: inherit
+  background-color: $color
+  border: 2px solid $color
+  border-radius: 0.4rem
+  line-height: 1.5rem
+
+  &:hover
+    background: darken($color, 5%)
+
+  &:active
+    background: darken($color, 10%)
+
+button.button
+  @include button($button-default)
+
+button.button.-primary
+  @include button($primary)
+  color: white
+
+button.button.-danger
+  @include button($danger)
+  color: white
+
