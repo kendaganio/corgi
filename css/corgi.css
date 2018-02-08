@@ -16,6 +16,7 @@ html {
 
 * {
   box-sizing: inherit;
+  flex: 1;
 }
 
 *:before, *:after {
@@ -24,11 +25,12 @@ html {
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem 0.5rem 1rem;
-  min-width: 100%;
+  flex: 0 0 100%;
 }
 
 h1 {
@@ -59,9 +61,34 @@ h6 {
 }
 
 .container {
+  margin: 2rem 3rem;
+}
+
+.columns {
   display: flex;
-  margin: 0.75rem;
+  justify-content: space-between;
+  clear: both;
   flex-wrap: wrap;
+}
+
+.columns > .column {
+  margin: 0.3rem 0.4rem;
+}
+
+.columns > .column:first-child {
+  margin-left: 0;
+}
+
+.columns > .column:last-child {
+  margin-right: 0;
+}
+
+.columns.demo .column {
+  background: pink;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=corgi.css.map */

@@ -1,4 +1,26 @@
 .container
+  margin: 2rem 3rem
+
+.columns
   display: flex
-  margin: 0.75rem
+  justify-content: space-between
+  clear: both
   flex-wrap: wrap
+
+  > .column
+    margin: 0.3rem 0.4rem
+
+    &:first-child
+      margin-left: 0
+
+    &:last-child
+      margin-right: 0
+
+  &.demo 
+    .column
+      background: pink
+      height: 80px
+      display: flex
+      align-items: center
+      justify-content: center
+
