@@ -4,9 +4,13 @@
   "description": "The css equivalent of a small and stupid log of fur.",
   "main": "corgi.css",
   "scripts": {
+    "autoprefix": "postcss --use autoprefixer --map false css/corgi.css --output css/corgi.css",
+    "minify": "postcss --use autoprefixer cssnano --map false css/corgi.css --output css/corgi.min.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node-sass --output-style expanded --source-map true corgi.sass css/corgi.css",
-    "start": "npm run build -- --watch"
+    "clean": "rimraf css",
+    "build": "npm run clean && npm run sass && npm run autoprefix ",
+    "sass": "node-sass --output-style expanded --source-map true corgi.sass css/corgi.css",
+    "start": "npm run sass -- --watch"
   },
   "repository": {
     "type": "git",
@@ -24,6 +28,10 @@
   },
   "homepage": "https://github.com/kendaganio/corgi#readme",
   "dependencies": {
-    "node-sass": "^4.7.2"
+    "autoprefixer": "^7.2.5",
+    "cssnano": "^3.10.0",
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^5.0.0",
+    "rimraf": "^2.6.2"
   }
 }

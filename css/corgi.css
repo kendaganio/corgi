@@ -11,16 +11,19 @@ hr, h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 16px;
 }
 
 * {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 *:before, *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -40,10 +43,10 @@ button.button {
   display: inline-block;
   padding: 0.5rem 1rem;
   font-size: inherit;
-  background-color: #eee;
-  border: 2px solid #eee;
   border-radius: 0.4rem;
   line-height: 1.5rem;
+  background-color: #eee;
+  border-color: #eee;
 }
 
 button.button:hover {
@@ -55,13 +58,8 @@ button.button:active {
 }
 
 button.button.-primary {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  font-size: inherit;
   background-color: #0984e3;
-  border: 2px solid #0984e3;
-  border-radius: 0.4rem;
-  line-height: 1.5rem;
+  border-color: #0984e3;
   color: white;
 }
 
@@ -74,13 +72,8 @@ button.button.-primary:active {
 }
 
 button.button.-danger {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  font-size: inherit;
   background-color: #d63031;
-  border: 2px solid #d63031;
-  border-radius: 0.4rem;
-  line-height: 1.5rem;
+  border-color: #d63031;
   color: white;
 }
 
@@ -135,10 +128,15 @@ h6 {
 }
 
 .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   clear: both;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .columns > .column {
@@ -155,11 +153,18 @@ h6 {
 
 .columns.demo .column {
   background: pink;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-
 /*# sourceMappingURL=corgi.css.map */

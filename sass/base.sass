@@ -33,10 +33,12 @@ code
   display: inline-block
   padding: 0.5rem 1rem
   font-size: inherit
-  background-color: $color
-  border: 2px solid $color
   border-radius: 0.4rem
   line-height: 1.5rem
+
+@mixin buttonColorize($color)
+  background-color: $color
+  border-color: $color
 
   &:hover
     background: darken($color, 5%)
@@ -46,12 +48,12 @@ code
 
 button.button
   @include button($button-default)
+  @include buttonColorize($button-default)
 
-button.button.-primary
-  @include button($primary)
-  color: white
+  &.-primary
+    @include buttonColorize($primary)
+    color: white
 
-button.button.-danger
-  @include button($danger)
-  color: white
-
+  &.-danger
+    @include buttonColorize($danger)
+    color: white
