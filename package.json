@@ -11,7 +11,9 @@
     "build": "npm run clean && npm run sass && npm run autoprefix ",
     "build-min": "npm run clean && npm run sass && npm run minify",
     "sass": "node-sass --output-style expanded --source-map true corgi.sass css/corgi.css",
-    "start": "npm run sass -- --watch"
+    "start": "npm run sass -- --watch",
+    "start-docs": "npm run docs -- --watch",
+    "docs": "node-sass --output-style expanded --source-map true docs/corgi-docs.sass docs/css/corgi-docs.css"
   },
   "repository": {
     "type": "git",

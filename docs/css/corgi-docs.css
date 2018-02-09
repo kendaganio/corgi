@@ -1,0 +1,236 @@
+html, body,
+p, ol, ul, li,
+dl, dt, dd,
+blockquote,
+figure, fieldset,
+legend, textarea,
+pre, iframe,
+hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+}
+
+code {
+  background: #eee;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 0.3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0.5rem 0.5rem 1rem;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h1 > small {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.5em;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.container {
+  margin: 2rem 3rem;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+  flex-wrap: wrap;
+}
+
+.columns > .column {
+  margin: 0.3rem 0.4rem;
+}
+
+.columns > .column:first-child {
+  margin-left: 0;
+}
+
+.columns > .column:last-child {
+  margin-right: 0;
+}
+
+.columns.demo .column {
+  background: #ff793f;
+  color: white;
+  flex: 1;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  border-radius: 0.4rem;
+  line-height: 1.5rem;
+  transition: background-color .15s ease-in-out;
+  background-color: #eee;
+  border-color: #eee;
+}
+
+button.button:hover {
+  background: #d5d5d5;
+}
+
+button.button:active {
+  background: #bbbbbb;
+}
+
+button.button.-outline {
+  background-color: transparent;
+  border-color: #eee;
+  color: #eee;
+  color: black;
+}
+
+button.button.-outline:hover {
+  background: #e1e1e1;
+  color: white;
+}
+
+button.button.-outline:active {
+  background: #d5d5d5;
+  color: white;
+}
+
+button.button.-primary {
+  background-color: #34ace0;
+  border-color: #34ace0;
+  color: white;
+}
+
+button.button.-primary:hover {
+  background: #1e91c3;
+}
+
+button.button.-primary:active {
+  background: #177097;
+}
+
+button.button.-primary-outline {
+  background-color: transparent;
+  border-color: #34ace0;
+  color: #34ace0;
+}
+
+button.button.-primary-outline:hover {
+  background: #21a2d9;
+  color: white;
+}
+
+button.button.-primary-outline:active {
+  background: #1e91c3;
+  color: white;
+}
+
+button.button.-danger {
+  background-color: #ff5252;
+  border-color: #ff5252;
+  color: white;
+}
+
+button.button.-danger:hover {
+  background: #ff1f1f;
+}
+
+button.button.-danger:active {
+  background: #eb0000;
+}
+
+button.button.-danger-outline {
+  background-color: transparent;
+  border-color: #ff5252;
+  color: #ff5252;
+}
+
+button.button.-danger-outline:hover {
+  background: #ff3939;
+  color: white;
+}
+
+button.button.-danger-outline:active {
+  background: #ff1f1f;
+  color: white;
+}
+
+button.button.-success {
+  background-color: #33d9b2;
+  border-color: #33d9b2;
+  color: white;
+}
+
+button.button.-success:hover {
+  background: #22b794;
+}
+
+button.button.-success:active {
+  background: #1a8c71;
+}
+
+button.button.-success-outline {
+  background-color: transparent;
+  border-color: #33d9b2;
+  color: #33d9b2;
+}
+
+button.button.-success-outline:hover {
+  background: #26cca5;
+  color: white;
+}
+
+button.button.-success-outline:active {
+  background: #22b794;
+  color: white;
+}
+
+/*# sourceMappingURL=corgi-docs.css.map */
