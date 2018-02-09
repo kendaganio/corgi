@@ -113,7 +113,8 @@ button.button {
   font-size: inherit;
   border-radius: 0.4rem;
   line-height: 1.5rem;
-  transition: background-color .15s ease-in-out;
+  transition: background-color .2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border: 1px solid transparent;
   background-color: #eee;
   border-color: #eee;
 }
@@ -124,6 +125,7 @@ button.button:hover {
 
 button.button:active {
   background: #bbbbbb;
+  border-color: #bbbbbb;
 }
 
 button.button.-outline {
@@ -155,6 +157,7 @@ button.button.-primary:hover {
 
 button.button.-primary:active {
   background: #177097;
+  border-color: #177097;
 }
 
 button.button.-primary-outline {
@@ -185,6 +188,7 @@ button.button.-danger:hover {
 
 button.button.-danger:active {
   background: #eb0000;
+  border-color: #eb0000;
 }
 
 button.button.-danger-outline {
@@ -215,6 +219,7 @@ button.button.-success:hover {
 
 button.button.-success:active {
   background: #1a8c71;
+  border-color: #1a8c71;
 }
 
 button.button.-success-outline {
