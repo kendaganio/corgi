@@ -4,7 +4,8 @@
   font-size: inherit
   border-radius: 0.4rem
   line-height: 1.5rem
-  transition: background-color .15s ease-in-out
+  transition: background-color .2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out
+  border: 1px solid transparent
 
 @mixin buttonColorize($color)
   background-color: $color
@@ -15,6 +16,7 @@
 
   &:active
     background: darken($color, 20%)
+    border-color: darken($color, 20%)
 
 @mixin outlineColorize($color) 
   background-color: transparent
