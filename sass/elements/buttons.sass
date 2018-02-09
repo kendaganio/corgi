@@ -11,10 +11,10 @@
   border-color: $color
 
   &:hover
-    background: darken($color, 5%)
+    background: darken($color, 10%)
 
   &:active
-    background: darken($color, 10%)
+    background: darken($color, 20%)
 
 @mixin outlineColorize($color) 
   background-color: transparent
@@ -32,6 +32,10 @@
 button.button
   @include button($button-default)
   @include buttonColorize($button-default)
+
+  &.-outline
+    @include outlineColorize($button-default)
+    color: black
 
   &.-primary
     @include buttonColorize($primary)

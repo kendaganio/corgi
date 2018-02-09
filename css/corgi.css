@@ -119,11 +119,28 @@ button.button {
 }
 
 button.button:hover {
-  background: #e1e1e1;
+  background: #d5d5d5;
 }
 
 button.button:active {
+  background: #bbbbbb;
+}
+
+button.button.-outline {
+  background-color: transparent;
+  border-color: #eee;
+  color: #eee;
+  color: black;
+}
+
+button.button.-outline:hover {
+  background: #e1e1e1;
+  color: white;
+}
+
+button.button.-outline:active {
   background: #d5d5d5;
+  color: white;
 }
 
 button.button.-primary {
@@ -133,11 +150,11 @@ button.button.-primary {
 }
 
 button.button.-primary:hover {
-  background: #21a2d9;
+  background: #1e91c3;
 }
 
 button.button.-primary:active {
-  background: #1e91c3;
+  background: #177097;
 }
 
 button.button.-primary-outline {
@@ -163,11 +180,11 @@ button.button.-danger {
 }
 
 button.button.-danger:hover {
-  background: #ff3939;
+  background: #ff1f1f;
 }
 
 button.button.-danger:active {
-  background: #ff1f1f;
+  background: #eb0000;
 }
 
 button.button.-danger-outline {
@@ -193,11 +210,11 @@ button.button.-success {
 }
 
 button.button.-success:hover {
-  background: #26cca5;
+  background: #22b794;
 }
 
 button.button.-success:active {
-  background: #22b794;
+  background: #1a8c71;
 }
 
 button.button.-success-outline {
