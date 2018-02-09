@@ -9,6 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf css",
     "build": "npm run clean && npm run sass && npm run autoprefix ",
+    "build-min": "npm run clean && npm run sass && npm run minify",
     "sass": "node-sass --output-style expanded --source-map true corgi.sass css/corgi.css",
     "start": "npm run sass -- --watch"
   },
