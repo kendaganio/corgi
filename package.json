@@ -5,21 +5,19 @@
   "main": "corgi.css",
   "scripts": {
     "clean": "rimraf css",
-
     "build": "npm run clean && npm run sass && npm run autoprefix ",
-    "build-docs": "npm run docs && npm run autoprefix",
-    "build-min": "npm run clean && npm run sass && npm run minify",
-
     "autoprefix": "postcss --use autoprefixer --map false css/corgi.css --output css/corgi.css",
-    "minify": "postcss --use autoprefixer cssnano --map false css/corgi.css --output css/corgi.min.css",
-
     "sass": "node-sass --output-style expanded --source-map true corgi.sass css/corgi.css",
-    "docs": "node-sass --output-style expanded --source-map true docs/corgi-docs.sass docs/css/corgi-docs.css",
-
     "start": "npm run sass -- --watch",
-    "start-docs": "npm run docs -- --watch",
 
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs-clean": "rimraf docs/css",
+    "docs-build": "npm run docs-clean && npm run docs-sass && npm run docs-autoprefix",
+    "docs-autoprefix": "postcss --use autoprefixer --map false docs/css/corgi-docs.css --output docs/css/corgi-docs.css",
+    "docs-sass": "node-sass --output-style expanded --source-map true docs/corgi-docs.sass docs/css/corgi-docs.css",
+    "docs-start": "npm run docs-sass -- --watch",
+
+    "deploy": "npm run build && npm run docs-build"
+
   },
   "repository": {
     "type": "git",
