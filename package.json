@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/kendaganio/corgi/issues"
   },
-  "homepage": "https://github.com/kendaganio/corgi#readme",
+  "homepage": "https://kendaganio.com/corgi",
   "dependencies": {
     "autoprefixer": "^7.2.5",
     "cssnano": "^3.10.0",
