@@ -36,6 +36,15 @@ code {
   border-radius: 0.3rem;
 }
 
+a {
+  color: #34ace0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #177097;
+}
+
 h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem 0.5rem 1rem;
   font-weight: normal;
@@ -98,26 +107,35 @@ h6 {
   margin-right: 0;
 }
 
-form.form {
+form {
   display: block;
   padding: 0.2rem;
 }
 
-form.form fieldset {
+form fieldset {
   border: none;
   margin-bottom: 1rem;
   background: white;
 }
 
-form.form fieldset label {
+form fieldset label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.4rem;
 }
 
-form.form fieldset input[type=text], form.form fieldset input[type=email], form.form fieldset input[type=number], form.form fieldset input[type=password],
-form.form fieldset input[type=search], form.form fieldset input[type=url], form.form fieldset input[type=tel],
-form.form fieldset select, form.form fieldset textarea {
+form fieldset label.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+form fieldset label.checkbox > input {
+  margin-right: 0.6rem;
+}
+
+form fieldset input[type=text], form fieldset input[type=email], form fieldset input[type=number], form fieldset input[type=password],
+form fieldset input[type=search], form fieldset input[type=url], form fieldset input[type=tel],
+form fieldset select, form fieldset textarea {
   background: transparent;
   appearance: none;
   font-size: inherit;
@@ -131,14 +149,14 @@ form.form fieldset select, form.form fieldset textarea {
   color: inherit;
 }
 
-form.form fieldset input[type=text]:focus, form.form fieldset input[type=email]:focus, form.form fieldset input[type=number]:focus, form.form fieldset input[type=password]:focus,
-form.form fieldset input[type=search]:focus, form.form fieldset input[type=url]:focus, form.form fieldset input[type=tel]:focus,
-form.form fieldset select:focus, form.form fieldset textarea:focus {
+form fieldset input[type=text]:focus, form fieldset input[type=email]:focus, form fieldset input[type=number]:focus, form fieldset input[type=password]:focus,
+form fieldset input[type=search]:focus, form fieldset input[type=url]:focus, form fieldset input[type=tel]:focus,
+form fieldset select:focus, form fieldset textarea:focus {
   outline: 0;
   border-color: #34ace0;
 }
 
-form.form fieldset textarea {
+form fieldset textarea {
   min-height: 4.5rem;
 }
 

@@ -11,16 +11,19 @@ hr, h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 16px;
 }
 
 * {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 *:before, *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -34,6 +37,15 @@ code {
   padding: 0.2rem 0.5rem;
   font-size: 0.9rem;
   border-radius: 0.3rem;
+}
+
+a {
+  color: #34ace0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #177097;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -79,15 +91,22 @@ h6 {
 }
 
 .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   clear: both;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .columns > .column {
   margin: 0.3rem 0.4rem;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .columns > .column:first-child {
@@ -98,28 +117,43 @@ h6 {
   margin-right: 0;
 }
 
-form.form {
+form {
   display: block;
   padding: 0.2rem;
 }
 
-form.form fieldset {
+form fieldset {
   border: none;
   margin-bottom: 1rem;
   background: white;
 }
 
-form.form fieldset label {
+form fieldset label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.4rem;
 }
 
-form.form fieldset input[type=text], form.form fieldset input[type=email], form.form fieldset input[type=number], form.form fieldset input[type=password],
-form.form fieldset input[type=search], form.form fieldset input[type=url], form.form fieldset input[type=tel],
-form.form fieldset select, form.form fieldset textarea {
+form fieldset label.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form fieldset label.checkbox > input {
+  margin-right: 0.6rem;
+}
+
+form fieldset input[type=text], form fieldset input[type=email], form fieldset input[type=number], form fieldset input[type=password],
+form fieldset input[type=search], form fieldset input[type=url], form fieldset input[type=tel],
+form fieldset select, form fieldset textarea {
   background: transparent;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font-size: inherit;
   line-height: 1.5;
   padding: 0.2rem 0.5rem;
@@ -131,14 +165,14 @@ form.form fieldset select, form.form fieldset textarea {
   color: inherit;
 }
 
-form.form fieldset input[type=text]:focus, form.form fieldset input[type=email]:focus, form.form fieldset input[type=number]:focus, form.form fieldset input[type=password]:focus,
-form.form fieldset input[type=search]:focus, form.form fieldset input[type=url]:focus, form.form fieldset input[type=tel]:focus,
-form.form fieldset select:focus, form.form fieldset textarea:focus {
+form fieldset input[type=text]:focus, form fieldset input[type=email]:focus, form fieldset input[type=number]:focus, form fieldset input[type=password]:focus,
+form fieldset input[type=search]:focus, form fieldset input[type=url]:focus, form fieldset input[type=tel]:focus,
+form fieldset select:focus, form fieldset textarea:focus {
   outline: 0;
   border-color: #34ace0;
 }
 
-form.form fieldset textarea {
+form fieldset textarea {
   min-height: 4.5rem;
 }
 
@@ -148,6 +182,7 @@ button.button, input.button {
   font-size: inherit;
   border-radius: 0.4rem;
   line-height: 1.5rem;
+  -webkit-transition: background-color .2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color .2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   border: 1px solid transparent;
   background-color: #eee;
@@ -272,5 +307,4 @@ button.button.-success-outline:active, input.button.-success-outline:active {
   background: #22b794;
   color: white;
 }
-
 /*# sourceMappingURL=corgi.css.map */
