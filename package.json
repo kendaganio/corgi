@@ -4,16 +4,22 @@
   "description": "The css equivalent of a small and stupid log of fur.",
   "main": "corgi.css",
   "scripts": {
+    "clean": "rimraf css",
+
+    "build": "npm run clean && npm run sass && npm run autoprefix ",
+    "build-docs": "npm run docs && npm run autoprefix",
+    "build-min": "npm run clean && npm run sass && npm run minify",
+
     "autoprefix": "postcss --use autoprefixer --map false css/corgi.css --output css/corgi.css",
     "minify": "postcss --use autoprefixer cssnano --map false css/corgi.css --output css/corgi.min.css",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf css",
-    "build": "npm run clean && npm run sass && npm run autoprefix ",
-    "build-min": "npm run clean && npm run sass && npm run minify",
+
     "sass": "node-sass --output-style expanded --source-map true corgi.sass css/corgi.css",
+    "docs": "node-sass --output-style expanded --source-map true docs/corgi-docs.sass docs/css/corgi-docs.css",
+
     "start": "npm run sass -- --watch",
     "start-docs": "npm run docs -- --watch",
-    "docs": "node-sass --output-style expanded --source-map true docs/corgi-docs.sass docs/css/corgi-docs.css"
+
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
