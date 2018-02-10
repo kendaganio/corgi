@@ -1,0 +1,36 @@
+form.form
+  display: block
+  padding: 0.2rem
+
+  fieldset
+    border: none
+    margin-bottom: 1rem
+    background: white
+
+    label
+      display: block
+      font-weight: bold
+      margin-bottom: 0.4rem
+
+    input[type=text], input[type=email], input[type=number], input[type=password], 
+    input[type=search], input[type=url], input[type=tel],
+    select, textarea
+      background: transparent
+      appearance: none
+      font-size: inherit
+      line-height: 1.5
+      padding: 0.2rem 0.5rem
+      border: 1px solid #d1d1d1
+      border-radius: 0.2rem
+      height: 2.5rem
+      width: 100%
+      margin-bottom: 0.8rem
+      color: inherit
+
+      &:focus
+        outline: 0
+        border-color: $primary
+
+    textarea
+      min-height: 4.5rem
+
