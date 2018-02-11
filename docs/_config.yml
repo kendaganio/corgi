@@ -23,6 +23,9 @@ url: "https://kendaganio.com/corgi" # the base hostname & protocol for your site
 twitter_username: kendaganio
 github_username:  kendaganio
 
+collections:
+  - docs
+
 # Build settings
 markdown: kramdown
 plugins:

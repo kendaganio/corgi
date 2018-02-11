@@ -1,0 +1,58 @@
+---
+layout: default
+title: Forms
+permalink: /forms
+---
+<div class="container">
+  <h1>Forms</h1><hr/><br/>
+
+  <div class="columns">
+    <div class="column">
+      <h4>Simple Form</h4>
+      <form class="form" action="" method="get" accept-charset="utf-8">
+        <fieldset id="" class="">
+          <label for="name">Name</label>
+          <input type="text" name="name" value="" id="name" placeholder="Ken Daganio">
+
+          <label for="color">Color</label>
+          <select name="color" id="color" size="1">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+          </select>
+        
+          <label for="description">Description</label>
+          <textarea name="description" rows="10" cols="40">
+This is some really long text
+          </textarea>
+
+          <input class="button -primary" type="submit" value="Let's go!">
+        </fieldset>
+      </form>
+    </div>
+    <div class="column">
+      <h4>Login Example</h4>
+      <form class="form-horizontal" action="" method="get" accept-charset="utf-8">
+        <fieldset id="" class="">
+          <label for="user">Username</label>
+          <input type="text" name="username" value="" id="username" placeholder="kendaganio">
+
+          <label>Password</label>
+          <input type="password" name="password" value="" id="password">
+
+          <span style="float: right">
+            <a href="" target="_blank">Forgot password?</a>
+          </span>
+
+          <label class="checkbox" for="remember">
+            <input type="checkbox" name="remember" value="" id="remember">
+            Remember me
+          </label>
+          
+
+          <input class="button -success" type="submit" name="" value="Log in" id="">
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
