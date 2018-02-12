@@ -105,31 +105,96 @@ h6 {
   margin: 1rem 2rem;
 }
 
-.columns {
+.columns > .column {
+  margin: 0.3rem 0.4rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .columns > .column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .columns > .column:first-child {
+    margin-left: 0;
+  }
+  .columns > .column:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .columns > .column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .columns > .column:first-child {
+    margin-left: 0;
+  }
+  .columns > .column:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav {
+  margin: 1rem 2rem;
+}
+
+.nav > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  clear: both;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.columns > .column {
-  margin: 0.3rem 0.4rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.nav > ul li {
+  padding: 1rem;
 }
 
-.columns > .column:first-child {
-  margin-left: 0;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav > ul {
+    display: inline;
+  }
+  .nav > ul li {
+    padding: 0.2rem;
+  }
 }
 
-.columns > .column:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1024px) {
+  .nav > ul {
+    display: inline;
+  }
+  .nav > ul li {
+    padding: 0.2rem;
+  }
 }
 
 form {
@@ -336,15 +401,28 @@ button.button.-success-outline:active, input.button.-success-outline:active {
 }
 
 main {
-  width: 960px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
 }
 
 header.banner {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 header.banner > h1 {
@@ -357,7 +435,6 @@ header.banner > p.subtitle {
 
 aside {
   text-align: right;
-  padding: 2rem 1rem 0 0;
   border-right: 1px solid #eee;
 }
 /*# sourceMappingURL=corgi-docs.css.map */
