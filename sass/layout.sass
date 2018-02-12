@@ -34,10 +34,11 @@
         margin-right: 0
 
 
-.nav
+nav.nav
   margin: 1rem 2rem
 
   & > ul
+    list-style: none
     display: flex
     flex-wrap: wrap
     align-items: center
@@ -59,3 +60,38 @@
 
       li
         padding: 0.2rem
+
+nav.navbar
+  background: $gray
+  display: flex
+  flex-grow: 1
+
+  > ul
+    list-style: none
+
+    > li
+      display: inline-block
+      padding: 0.3rem 1rem
+      line-height: 3
+
+      &:hover
+        background: darken($gray, 10%)
+
+        > a
+          color: $gray
+          
+
+      > a
+        color: inherit
+
+        &:hover
+          color: $gray
+
+  .navbar-left
+    display: flex
+    justify-self: flex-start
+    flex-grow: 1
+
+  .navbar-right
+    display: flex
+    justify-self: flex-end
