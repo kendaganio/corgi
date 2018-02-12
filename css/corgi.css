@@ -14,6 +14,11 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
 
 * {
@@ -132,19 +137,19 @@ form {
   padding: 0.2rem;
 }
 
-form fieldset {
+form > fieldset {
   border: none;
   margin-bottom: 1rem;
-  background: white;
+  background: transparent;
 }
 
-form fieldset label {
+form > fieldset label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.4rem;
 }
 
-form fieldset label.checkbox {
+form > fieldset label.checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,17 +158,14 @@ form fieldset label.checkbox {
           align-items: center;
 }
 
-form fieldset label.checkbox > input {
+form > fieldset label.checkbox > input {
   margin-right: 0.6rem;
 }
 
-form fieldset input[type=text], form fieldset input[type=email], form fieldset input[type=number], form fieldset input[type=password],
-form fieldset input[type=search], form fieldset input[type=url], form fieldset input[type=tel],
-form fieldset select, form fieldset textarea {
+form > fieldset input[type=text], form > fieldset input[type=email], form > fieldset input[type=number], form > fieldset input[type=password],
+form > fieldset input[type=search], form > fieldset input[type=url], form > fieldset input[type=tel],
+form > fieldset select, form > fieldset textarea {
   background: transparent;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   font-size: inherit;
   line-height: 1.5;
   padding: 0.2rem 0.5rem;
@@ -175,14 +177,14 @@ form fieldset select, form fieldset textarea {
   color: inherit;
 }
 
-form fieldset input[type=text]:focus, form fieldset input[type=email]:focus, form fieldset input[type=number]:focus, form fieldset input[type=password]:focus,
-form fieldset input[type=search]:focus, form fieldset input[type=url]:focus, form fieldset input[type=tel]:focus,
-form fieldset select:focus, form fieldset textarea:focus {
+form > fieldset input[type=text]:focus, form > fieldset input[type=email]:focus, form > fieldset input[type=number]:focus, form > fieldset input[type=password]:focus,
+form > fieldset input[type=search]:focus, form > fieldset input[type=url]:focus, form > fieldset input[type=tel]:focus,
+form > fieldset select:focus, form > fieldset textarea:focus {
   outline: 0;
   border-color: #34ace0;
 }
 
-form fieldset textarea {
+form > fieldset textarea {
   min-height: 4.5rem;
 }
 

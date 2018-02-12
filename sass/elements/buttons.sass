@@ -32,11 +32,11 @@
     color: white
 
 button.button, input.button
-  @include button($button-default)
-  @include buttonColorize($button-default)
+  @include button($buttonDefault)
+  @include buttonColorize($buttonDefault)
 
   &.-outline
-    @include outlineColorize($button-default)
+    @include outlineColorize($buttonDefault)
     color: black
 
   &.-primary
