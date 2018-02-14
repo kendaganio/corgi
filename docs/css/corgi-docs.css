@@ -491,7 +491,39 @@ header.banner > p.subtitle {
 }
 
 aside {
+  background: #eee;
   text-align: right;
   border-right: 1px solid #eee;
+  padding: 0.1px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  aside {
+    background: transparent;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  aside {
+    background: transparent;
+  }
+}
+
+nav.nav h6 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  nav.nav h6 {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav.nav h6 {
+    text-align: right;
+  }
 }
 /*# sourceMappingURL=corgi-docs.css.map */

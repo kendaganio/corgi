@@ -22,7 +22,6 @@ main
     grid-template-columns: 1fr 4fr
 
 
-
 header.banner
   text-align: center
   margin-top: 1rem
@@ -35,6 +34,24 @@ header.banner
     margin-bottom: 2rem
 
 aside
+  background: $gray
   text-align: right
   border-right: 1px solid $gray
+  padding: 0.1px
+
+  +tablet
+    background: transparent
+  +desktop
+    background: transparent
+
+nav.nav
+  h6
+    text-align: center
+    font-size: 1rem
+    margin-bottom: 0.4rem
+
+    +tablet
+      text-align: right
+    +desktop
+      text-align: right
 
