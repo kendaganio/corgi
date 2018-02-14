@@ -24,7 +24,9 @@ twitter_username: kendaganio
 github_username:  kendaganio
 
 collections:
-  - docs
+  documentation:
+      output: true
+      permalink: /:collection/:name
 
 # Build settings
 markdown: kramdown

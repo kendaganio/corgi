@@ -1,11 +1,19 @@
 <aside>
   <nav class="nav">
+    <strong>Docs</strong>
     <ul class="unstyled">
-      {% for page in site.pages %}
+      {% for page in site.documentation %}
         <li>
           <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
         </li>
       {% endfor %}
+    </ul>
+
+    <br/>
+    <strong>Examples</strong>
+    <ul class="unstyled">
+      <li>Landing Page</li>
+      <li>Dashboard</li>
     </ul>
   </nav>
 </aside>
