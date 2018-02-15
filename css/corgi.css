@@ -64,7 +64,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0.5rem 0 1rem 0;
+  margin-bottom: 1rem;
   font-weight: normal;
 }
 
@@ -102,11 +102,15 @@ h6 {
 }
 
 .container {
-  margin: 1rem 2rem;
+  margin: 1rem 1.5rem;
+}
+
+.columns {
+  margin: 0 -0.4rem;
 }
 
 .columns > .column {
-  margin: 0.3rem 0.4rem;
+  margin: 0 0.4rem 0.3rem 0.4rem;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -125,12 +129,6 @@ h6 {
         -ms-flex: 1;
             flex: 1;
   }
-  .columns > .column:first-child {
-    margin-left: 0;
-  }
-  .columns > .column:last-child {
-    margin-right: 0;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -148,12 +146,6 @@ h6 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-  }
-  .columns > .column:first-child {
-    margin-left: 0;
-  }
-  .columns > .column:last-child {
-    margin-right: 0;
   }
 }
 
