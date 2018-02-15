@@ -27,6 +27,10 @@ collections:
   documentation:
       output: true
       permalink: /:collection/:name
+  examples:
+      output: true
+      permalink: /:collection/:name
+
 
 # Build settings
 markdown: kramdown
