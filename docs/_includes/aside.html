@@ -12,8 +12,11 @@
     <br/>
     <h6>Examples</h6>
     <ul class="unstyled">
-      <li>Landing Page</li>
-      <li>Dashboard</li>
+      {% for page in site.examples %}
+        <li>
+          <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+        </li>
+      {% endfor %}
     </ul>
   </nav>
 </aside>

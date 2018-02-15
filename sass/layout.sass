@@ -1,9 +1,11 @@
 .container
-  margin: 1rem 2rem
+  margin: 1rem 1.5rem
 
 .columns
+  margin: 0 -0.4rem
+
   > .column
-    margin: 0.3rem 0.4rem
+    margin: 0 0.4rem 0.3rem 0.4rem
 
   +tablet
     display: flex
@@ -13,12 +15,6 @@
     > .column
       flex: 1
 
-      &:first-child
-        margin-left: 0
-
-      &:last-child
-        margin-right: 0
-
   +desktop
     display: flex
     justify-content: space-between
@@ -26,13 +22,6 @@
 
     > .column
       flex: 1
-
-      &:first-child
-        margin-left: 0
-
-      &:last-child
-        margin-right: 0
-
 
 nav.nav
   margin: 1rem 1.5rem
