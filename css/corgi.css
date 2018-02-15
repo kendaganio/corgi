@@ -63,6 +63,10 @@ hr {
   border-bottom: 2px solid #eee;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   font-weight: normal;
@@ -297,6 +301,41 @@ form > fieldset select:focus, form > fieldset textarea:focus {
 
 form > fieldset textarea {
   min-height: 4.5rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex.-vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex.-horizontal-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex.-both-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 button.button, input.button {

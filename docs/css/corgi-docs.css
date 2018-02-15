@@ -11,7 +11,8 @@ hr, h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 16px;
   text-rendering: optimizeLegibility;
   font-smoothing: antialiased;
@@ -21,11 +22,13 @@ html {
 }
 
 * {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 *:before, *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -116,23 +119,37 @@ h6 {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .columns > .column {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .columns > .column {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 
@@ -142,10 +159,17 @@ nav.nav {
 
 nav.nav > ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav.nav > ul li {
@@ -172,8 +196,12 @@ nav.nav > ul li {
 
 nav.navbar {
   background: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 nav.navbar > ul {
@@ -203,12 +231,18 @@ nav.navbar > ul > li > a:hover {
 }
 
 nav.navbar .navbar-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-self: flex-start;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 nav.navbar .navbar-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-self: flex-end;
 }
@@ -231,8 +265,12 @@ form > fieldset label {
 }
 
 form > fieldset label.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 form > fieldset label.checkbox > input {
@@ -266,20 +304,30 @@ form > fieldset textarea {
 }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .flex.-vertical-center {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flex.-horizontal-center {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .flex.-both-center {
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .text-center {
@@ -291,12 +339,15 @@ form > fieldset textarea {
 }
 
 button.button, input.button {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: inline-block;
   padding: 0.5rem 1rem;
   font-size: inherit;
   border-radius: 0.3rem;
   line-height: 1.5rem;
+  -webkit-transition: background-color .2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color .2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   border: 1px solid transparent;
   background-color: #eee;
@@ -426,9 +477,15 @@ button.button.-success-outline:active, input.button.-success-outline:active {
   background: #ff793f;
   color: white;
   height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main.documentation {
@@ -504,7 +561,10 @@ nav.nav h6 {
 .landing-example header {
   min-height: 35rem;
   text-align: center;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .landing-example section.columns.stats {
@@ -514,7 +574,10 @@ nav.nav h6 {
 
 .landing-example section.columns.stats .column {
   min-height: 14rem;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .landing-example section.columns.stats .column > h2 {
@@ -557,5 +620,4 @@ nav.nav h6 {
 .landing-example footer ul.unstyled li {
   padding-bottom: 0.4rem;
 }
-
 /*# sourceMappingURL=corgi-docs.css.map */
