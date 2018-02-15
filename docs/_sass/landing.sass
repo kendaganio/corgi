@@ -1,25 +1,15 @@
-=center-flex
-  display: flex
-  align-items: center
-  justify-content: center
-
-
 .landing-example
-  padding-bottom: 200px
   header
-    +center-flex
-    min-height: 25rem
+    min-height: 35rem
     text-align: center
     flex-direction: column
 
   section.columns
-
     &.stats
       background: #34ace0
       color: white
 
       .column
-        +center-flex
         min-height: 14rem
         flex-direction: column
 
@@ -34,11 +24,20 @@
       min-height: 10rem
 
       > .column
-        padding: 2rem
-        +center-flex
-        background: pink
+        +tablet
+          margin: 0
+        +desktop
+          margin: 0
 
-      .fancy-captioned-image
-        > h3
-          text-transform: uppercase
-          font-weight: bold
+      h3.display
+        font-size: 3.2rem
+
+
+  footer
+    background: $gray
+
+    .column
+      padding: 2rem
+
+    ul.unstyled li
+      padding-bottom: 0.4rem
