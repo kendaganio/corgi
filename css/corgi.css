@@ -39,6 +39,7 @@ body {
 
 code {
   background: #eee;
+  color: #ff5252;
   padding: 0.2rem 0.5rem;
   font-size: 0.9rem;
   border-radius: 0.3rem;
@@ -247,24 +248,24 @@ nav.navbar .navbar-right {
   justify-self: flex-end;
 }
 
-form {
+form.form {
   display: block;
   padding: 0.2rem;
 }
 
-form > fieldset {
+form.form > fieldset {
   border: none;
   margin-bottom: 1rem;
   background: transparent;
 }
 
-form > fieldset label {
+form.form > fieldset label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.4rem;
 }
 
-form > fieldset label.checkbox {
+form.form > fieldset label.checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,13 +274,13 @@ form > fieldset label.checkbox {
           align-items: center;
 }
 
-form > fieldset label.checkbox > input {
+form.form > fieldset label.checkbox > input {
   margin-right: 0.6rem;
 }
 
-form > fieldset input[type=text], form > fieldset input[type=email], form > fieldset input[type=number], form > fieldset input[type=password],
-form > fieldset input[type=search], form > fieldset input[type=url], form > fieldset input[type=tel],
-form > fieldset select, form > fieldset textarea {
+form.form > fieldset input[type=text], form.form > fieldset input[type=email], form.form > fieldset input[type=number], form.form > fieldset input[type=password],
+form.form > fieldset input[type=search], form.form > fieldset input[type=url], form.form > fieldset input[type=tel],
+form.form > fieldset select, form.form > fieldset textarea {
   background: transparent;
   font-size: inherit;
   line-height: 1.5;
@@ -292,14 +293,14 @@ form > fieldset select, form > fieldset textarea {
   color: inherit;
 }
 
-form > fieldset input[type=text]:focus, form > fieldset input[type=email]:focus, form > fieldset input[type=number]:focus, form > fieldset input[type=password]:focus,
-form > fieldset input[type=search]:focus, form > fieldset input[type=url]:focus, form > fieldset input[type=tel]:focus,
-form > fieldset select:focus, form > fieldset textarea:focus {
+form.form > fieldset input[type=text]:focus, form.form > fieldset input[type=email]:focus, form.form > fieldset input[type=number]:focus, form.form > fieldset input[type=password]:focus,
+form.form > fieldset input[type=search]:focus, form.form > fieldset input[type=url]:focus, form.form > fieldset input[type=tel]:focus,
+form.form > fieldset select:focus, form.form > fieldset textarea:focus {
   outline: 0;
   border-color: #34ace0;
 }
 
-form > fieldset textarea {
+form.form > fieldset textarea {
   min-height: 4.5rem;
 }
 
