@@ -38,7 +38,7 @@ body {
 }
 
 code {
-  background: #eee;
+  background-color: #f7f7f9;
   color: #ff5252;
   padding: 0.2rem 0.5rem;
   font-size: 0.9rem;
@@ -62,10 +62,15 @@ hr {
   height: 1px;
   border: none;
   border-bottom: 2px solid #eee;
+  margin: 1rem 0;
 }
 
 img {
   max-width: 100%;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -107,7 +112,7 @@ h6 {
 }
 
 .container {
-  margin: 1rem 1.5rem;
+  padding: 1rem;
 }
 
 .columns {
@@ -152,10 +157,6 @@ h6 {
         -ms-flex: 1;
             flex: 1;
   }
-}
-
-nav.nav {
-  margin: 1rem 1.5rem;
 }
 
 nav.nav > ul {
@@ -493,11 +494,18 @@ main.documentation {
   margin: 0 auto;
 }
 
+main.documentation .content-main {
+  padding: 1rem;
+}
+
 @media screen and (min-width: 1024px) {
   main.documentation {
     max-width: 960px;
     display: grid;
     grid-template-columns: 1fr 4fr;
+  }
+  main.documentation > .content-main {
+    padding: 1rem 1.5rem;
   }
 }
 
@@ -557,6 +565,28 @@ nav.nav h6 {
   nav.nav h6 {
     text-align: right;
   }
+}
+
+.highlight {
+  background-color: #f7f7f9;
+  padding: 0.5rem 1rem;
+}
+
+.highlight pre {
+  padding: 0;
+  margin-top: 0;
+}
+
+.highlight code {
+  background: transparent;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.preview {
+  border: 3px solid #f7f7f9;
 }
 
 .landing-example header {
@@ -620,5 +650,204 @@ nav.nav h6 {
 
 .landing-example footer ul.unstyled li {
   padding-bottom: 0.4rem;
+}
+
+.hll {
+  background-color: #ffc;
+}
+
+.c {
+  color: #999;
+}
+
+.k {
+  color: #069;
+}
+
+.o {
+  color: #555;
+}
+
+.cm {
+  color: #999;
+}
+
+.cp {
+  color: #099;
+}
+
+.c1, .cs {
+  color: #999;
+}
+
+.gd {
+  background-color: #fcc;
+  border: 1px solid #c00;
+}
+
+.ge {
+  font-style: italic;
+}
+
+.gr {
+  color: #f00;
+}
+
+.gh {
+  color: #030;
+}
+
+.gi {
+  background-color: #cfc;
+  border: 1px solid #0c0;
+}
+
+.go {
+  color: #aaa;
+}
+
+.gp {
+  color: #009;
+}
+
+.gu {
+  color: #030;
+}
+
+.gt {
+  color: #9c6;
+}
+
+.kc, .kd, .kn, .kp, .kr {
+  color: #069;
+}
+
+.kt {
+  color: #078;
+}
+
+.m {
+  color: #f60;
+}
+
+.s {
+  color: #d44950;
+}
+
+.na {
+  color: #4f9fcf;
+}
+
+.nb {
+  color: #366;
+}
+
+.nc {
+  color: #0a8;
+}
+
+.no {
+  color: #360;
+}
+
+.nd {
+  color: #99f;
+}
+
+.ni {
+  color: #999;
+}
+
+.ne {
+  color: #c00;
+}
+
+.nf {
+  color: #c0f;
+}
+
+.nl {
+  color: #99f;
+}
+
+.nn {
+  color: #0cf;
+}
+
+.nt {
+  color: #2f6f9f;
+}
+
+.nv {
+  color: #033;
+}
+
+.ow {
+  color: #000;
+}
+
+.w {
+  color: #bbb;
+}
+
+.mf, .mh, .mi, .mo {
+  color: #f60;
+}
+
+.sb, .sc {
+  color: #c30;
+}
+
+.sd {
+  font-style: italic;
+  color: #c30;
+}
+
+.s2, .se, .sh {
+  color: #c30;
+}
+
+.si {
+  color: #a00;
+}
+
+.sx {
+  color: #c30;
+}
+
+.sr {
+  color: #3aa;
+}
+
+.s1 {
+  color: #c30;
+}
+
+.ss {
+  color: #fc3;
+}
+
+.bp {
+  color: #366;
+}
+
+.vc, .vg, .vi {
+  color: #033;
+}
+
+.il {
+  color: #f60;
+}
+
+.css .o {
+  color: #999;
+}
+
+.css .o + .nt {
+  color: #999;
+}
+
+.css .nt + .nt {
+  color: #999;
 }
 /*# sourceMappingURL=corgi-docs.css.map */

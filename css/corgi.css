@@ -38,7 +38,7 @@ body {
 }
 
 code {
-  background: #eee;
+  background-color: #f7f7f9;
   color: #ff5252;
   padding: 0.2rem 0.5rem;
   font-size: 0.9rem;
@@ -62,10 +62,15 @@ hr {
   height: 1px;
   border: none;
   border-bottom: 2px solid #eee;
+  margin: 1rem 0;
 }
 
 img {
   max-width: 100%;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -107,7 +112,7 @@ h6 {
 }
 
 .container {
-  margin: 1rem 1.5rem;
+  padding: 1rem;
 }
 
 .columns {
@@ -152,10 +157,6 @@ h6 {
         -ms-flex: 1;
             flex: 1;
   }
-}
-
-nav.nav {
-  margin: 1rem 1.5rem;
 }
 
 nav.nav > ul {
