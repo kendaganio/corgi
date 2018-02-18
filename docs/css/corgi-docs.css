@@ -566,7 +566,7 @@ nav.nav h6 {
 .highlight pre {
   padding: 0;
   margin-top: 0;
-  overflow-x: scroll;
+  overflow: auto;
 }
 
 .highlight code {
