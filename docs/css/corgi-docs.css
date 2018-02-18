@@ -115,12 +115,8 @@ h6 {
   padding: 1rem;
 }
 
-.columns {
-  margin: 0 -0.4rem;
-}
-
 .columns > .column {
-  margin: 0 0.4rem 0.3rem 0.4rem;
+  padding: 0.5rem;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -340,6 +336,14 @@ form.form > fieldset textarea {
   text-align: right;
 }
 
+.box {
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0 1px 2px rgba(10, 10, 10, 0.1);
+          box-shadow: 0 1px 2px rgba(10, 10, 10, 0.1);
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
 button.button, input.button {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -475,21 +479,6 @@ button.button.-success-outline:active, input.button.-success-outline:active {
   color: white;
 }
 
-.columns.demo .column {
-  background: #ff793f;
-  color: white;
-  height: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 main.documentation {
   margin: 0 auto;
 }
@@ -570,6 +559,7 @@ nav.nav h6 {
 .highlight {
   background-color: #f7f7f9;
   padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .highlight pre {
