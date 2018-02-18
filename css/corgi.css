@@ -69,11 +69,6 @@ img {
   max-width: 100%;
 }
 
-p {
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   font-weight: normal;
@@ -110,6 +105,11 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-weight: normal;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 .container {
