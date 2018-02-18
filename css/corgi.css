@@ -71,6 +71,7 @@ img {
 
 p {
   margin-bottom: 1rem;
+  line-height: 1.4;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -113,6 +114,10 @@ h6 {
 
 .container {
   padding: 1rem;
+}
+
+.columns.-unpadded .column {
+  padding: 0;
 }
 
 .columns > .column {
@@ -247,7 +252,6 @@ nav.navbar .navbar-right {
 
 form.form {
   display: block;
-  padding: 0.2rem;
 }
 
 form.form > fieldset {
