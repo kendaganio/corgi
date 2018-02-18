@@ -348,7 +348,8 @@ form.form > fieldset textarea {
   padding: 0.5rem;
 }
 
-button.button, input.button {
+a.button, button.button, input.button {
+  color: rgba(0, 0, 0, 0.8);
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -364,121 +365,121 @@ button.button, input.button {
   border-color: #eee;
 }
 
-button.button:hover, input.button:hover {
+a.button:hover, button.button:hover, input.button:hover {
   background: #d5d5d5;
 }
 
-button.button:active, input.button:active {
+a.button:active, button.button:active, input.button:active {
   background: #bbbbbb;
   border-color: #bbbbbb;
 }
 
-button.button.-outline, input.button.-outline {
+a.button.-outline, button.button.-outline, input.button.-outline {
   background-color: transparent;
   border-color: #eee;
   color: #eee;
   color: black;
 }
 
-button.button.-outline:hover, input.button.-outline:hover {
+a.button.-outline:hover, button.button.-outline:hover, input.button.-outline:hover {
   background: #e1e1e1;
   color: white;
 }
 
-button.button.-outline:active, input.button.-outline:active {
+a.button.-outline:active, button.button.-outline:active, input.button.-outline:active {
   background: #d5d5d5;
   color: white;
 }
 
-button.button.-primary, input.button.-primary {
+a.button.-primary, button.button.-primary, input.button.-primary {
   background-color: #34ace0;
   border-color: #34ace0;
   color: white;
 }
 
-button.button.-primary:hover, input.button.-primary:hover {
+a.button.-primary:hover, button.button.-primary:hover, input.button.-primary:hover {
   background: #1e91c3;
 }
 
-button.button.-primary:active, input.button.-primary:active {
+a.button.-primary:active, button.button.-primary:active, input.button.-primary:active {
   background: #177097;
   border-color: #177097;
 }
 
-button.button.-primary-outline, input.button.-primary-outline {
+a.button.-primary-outline, button.button.-primary-outline, input.button.-primary-outline {
   background-color: transparent;
   border-color: #34ace0;
   color: #34ace0;
 }
 
-button.button.-primary-outline:hover, input.button.-primary-outline:hover {
+a.button.-primary-outline:hover, button.button.-primary-outline:hover, input.button.-primary-outline:hover {
   background: #21a2d9;
   color: white;
 }
 
-button.button.-primary-outline:active, input.button.-primary-outline:active {
+a.button.-primary-outline:active, button.button.-primary-outline:active, input.button.-primary-outline:active {
   background: #1e91c3;
   color: white;
 }
 
-button.button.-danger, input.button.-danger {
+a.button.-danger, button.button.-danger, input.button.-danger {
   background-color: #ff5252;
   border-color: #ff5252;
   color: white;
 }
 
-button.button.-danger:hover, input.button.-danger:hover {
+a.button.-danger:hover, button.button.-danger:hover, input.button.-danger:hover {
   background: #ff1f1f;
 }
 
-button.button.-danger:active, input.button.-danger:active {
+a.button.-danger:active, button.button.-danger:active, input.button.-danger:active {
   background: #eb0000;
   border-color: #eb0000;
 }
 
-button.button.-danger-outline, input.button.-danger-outline {
+a.button.-danger-outline, button.button.-danger-outline, input.button.-danger-outline {
   background-color: transparent;
   border-color: #ff5252;
   color: #ff5252;
 }
 
-button.button.-danger-outline:hover, input.button.-danger-outline:hover {
+a.button.-danger-outline:hover, button.button.-danger-outline:hover, input.button.-danger-outline:hover {
   background: #ff3939;
   color: white;
 }
 
-button.button.-danger-outline:active, input.button.-danger-outline:active {
+a.button.-danger-outline:active, button.button.-danger-outline:active, input.button.-danger-outline:active {
   background: #ff1f1f;
   color: white;
 }
 
-button.button.-success, input.button.-success {
+a.button.-success, button.button.-success, input.button.-success {
   background-color: #33d9b2;
   border-color: #33d9b2;
   color: white;
 }
 
-button.button.-success:hover, input.button.-success:hover {
+a.button.-success:hover, button.button.-success:hover, input.button.-success:hover {
   background: #22b794;
 }
 
-button.button.-success:active, input.button.-success:active {
+a.button.-success:active, button.button.-success:active, input.button.-success:active {
   background: #1a8c71;
   border-color: #1a8c71;
 }
 
-button.button.-success-outline, input.button.-success-outline {
+a.button.-success-outline, button.button.-success-outline, input.button.-success-outline {
   background-color: transparent;
   border-color: #33d9b2;
   color: #33d9b2;
 }
 
-button.button.-success-outline:hover, input.button.-success-outline:hover {
+a.button.-success-outline:hover, button.button.-success-outline:hover, input.button.-success-outline:hover {
   background: #26cca5;
   color: white;
 }
 
-button.button.-success-outline:active, input.button.-success-outline:active {
+a.button.-success-outline:active, button.button.-success-outline:active, input.button.-success-outline:active {
   background: #22b794;
   color: white;
 }
