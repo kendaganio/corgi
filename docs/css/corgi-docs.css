@@ -147,16 +147,73 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .columns > .column {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .columns > .column.-one {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.3333%;
+            flex: 0 0 8.3333%;
+  }
+  .columns > .column.-two {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.6667%;
+            flex: 0 0 16.6667%;
+  }
+  .columns > .column.-three {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+  .columns > .column.-four {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333%;
+            flex: 0 0 33.3333%;
+  }
+  .columns > .column.-five {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.6667%;
+            flex: 0 0 41.6667%;
+  }
+  .columns > .column.-six {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .columns > .column.-seven {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.3333%;
+            flex: 0 0 58.3333%;
+  }
+  .columns > .column.-eight {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6667%;
+            flex: 0 0 66.6667%;
+  }
+  .columns > .column.-nine {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+  }
+  .columns > .column.-ten {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.3333%;
+            flex: 0 0 83.3333%;
+  }
+  .columns > .column.-eleven {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.6667%;
+            flex: 0 0 91.6667%;
+  }
+  .columns > .column.-twelve {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }
 
@@ -579,6 +636,10 @@ nav.nav h6 {
 
 .preview {
   border: 3px solid #f7f7f9;
+}
+
+.preview .column {
+  text-align: center;
 }
 
 .landing-example header {

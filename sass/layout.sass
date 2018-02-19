@@ -20,11 +20,36 @@
 
   +desktop
     display: flex
-    justify-content: space-between
     flex-wrap: wrap
 
     > .column
-      flex: 1
+      flex-grow: 1
+
+      &.-one
+        flex: 0 0 8.3333%
+      &.-two
+        flex: 0 0 16.6667%
+      &.-three
+        flex: 0 0 25%
+      &.-four
+        flex: 0 0 33.3333%
+      &.-five
+        flex: 0 0 41.6667%
+      &.-six
+        flex: 0 0 50%
+      &.-seven
+        flex: 0 0 58.3333%
+      &.-eight
+        flex: 0 0 66.6667%
+      &.-nine
+        flex: 0 0 75%
+      &.-ten
+        flex: 0 0 83.3333%
+      &.-eleven
+        flex: 0 0 91.6667%
+      &.-twelve
+        flex: 0 0 100%
+
 
 nav.nav
   & > ul
