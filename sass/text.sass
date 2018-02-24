@@ -30,3 +30,33 @@ h6
 p
   margin-bottom: 1rem
   line-height: 1.6
+
+.table
+  border-collapse: collapse
+
+  thead
+    vertical-align: bottom
+    text-align: inherit
+
+    th
+      border-bottom: 2px solid $gray
+
+  td, th
+    padding: 0.7rem
+    border-bottom: 1px solid $gray
+    border-top: 1px solid $gray
+
+  &.-full-width
+    width: 100%
+    max-width: 100%
+
+  &.-bordered
+    td, th
+      border: 1px solid $gray
+
+    thead th
+      border-bottom: 2px solid $gray
+
+  &.-narrow
+    td,th
+      padding: 0.5rem
