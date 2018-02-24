@@ -1,6 +1,10 @@
 =green
   background: green
 
+=small
+  @media screen and (max-width : #{$tabletWidth - 1px})
+    @content
+
 =tablet
   @media screen and (min-width: $tabletWidth) and (max-width : #{$desktopWidth - 1px})
     @content
