@@ -112,31 +112,31 @@ The `-narrow` modifier will reduce the padding within the cells for thinner tabl
       </thead>
       <tbody>
         <tr>
-          <td>Ely</td>
-          <td>Pupper</td>
+          <td>Manse</td>
+          <td>Crocodile</td>
         </tr>
         <tr>
-          <td>Minguk</td>
-          <td>Smol Tiger</td>
+          <td>Oreo</td>
+          <td>Skunk</td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
 {% highlight html %}
-<table class="table -bordered">
+<table class="table -narrow">
   <thead>
     <th>Name</th>
     <th>Creature Type</th>
   </thead>
   <tbody>
     <tr>
-      <td>Ely</td>
-      <td>Pupper</td>
+      <td>Manse</td>
+      <td>Crocodile</td>
     </tr>
     <tr>
-      <td>Minguk</td>
-      <td>Smol Tiger</td>
+      <td>Oreo</td>
+      <td>Skunk</td>
     </tr>
   </tbody>
 </table>
