@@ -13,4 +13,6 @@ via a cdn
 ```html
 <link rel="stylesheet" href="https://unpkg.com/corgicss@latest/css/corgi.css"/>
 ```
+## Projects Using Corgi
 
+- [Stocks Momentum](http://marlonperillo.com/stocks/stocks_momentum.php) - @marlonperillo
