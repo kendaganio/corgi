@@ -1,4 +1,5 @@
-# corgi &middot; [![npm version](https://badge.fury.io/js/corgicss.svg)](https://badge.fury.io/js/corgicss)
+# corgi &middot; [![npm version](https://img.shields.io/npm/v/corgicss.svg)](https://www.npmjs.com/package/corgicss)
+
 > The CSS equivalent of a small and stupid log of fur
 
 ## Installation
