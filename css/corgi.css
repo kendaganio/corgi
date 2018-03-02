@@ -11,8 +11,7 @@ hr, h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 16px;
   text-rendering: optimizeLegibility;
   font-smoothing: antialiased;
@@ -22,13 +21,11 @@ html {
 }
 
 * {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -127,94 +124,58 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .columns > .column {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .columns {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .columns > .column {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
+    flex: 1 1 0;
   }
   .columns > .column.-one {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 8.3333%;
-            flex: 0 0 8.3333%;
+    flex: 0 0 8.3333%;
   }
   .columns > .column.-two {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 16.6667%;
-            flex: 0 0 16.6667%;
+    flex: 0 0 16.6667%;
   }
   .columns > .column.-three {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+    flex: 0 0 25%;
   }
   .columns > .column.-four {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.3333%;
-            flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
   }
   .columns > .column.-five {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 41.6667%;
-            flex: 0 0 41.6667%;
+    flex: 0 0 41.6667%;
   }
   .columns > .column.-six {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    flex: 0 0 50%;
   }
   .columns > .column.-seven {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 58.3333%;
-            flex: 0 0 58.3333%;
+    flex: 0 0 58.3333%;
   }
   .columns > .column.-eight {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 66.6667%;
-            flex: 0 0 66.6667%;
+    flex: 0 0 66.6667%;
   }
   .columns > .column.-nine {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 75%;
-            flex: 0 0 75%;
+    flex: 0 0 75%;
   }
   .columns > .column.-ten {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 83.3333%;
-            flex: 0 0 83.3333%;
+    flex: 0 0 83.3333%;
   }
   .columns > .column.-eleven {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 91.6667%;
-            flex: 0 0 91.6667%;
+    flex: 0 0 91.6667%;
   }
   .columns > .column.-twelve {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 
@@ -235,12 +196,8 @@ form.form > fieldset label {
 }
 
 form.form > fieldset label.checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 form.form > fieldset label.checkbox > input {
@@ -274,30 +231,20 @@ form.form > fieldset textarea {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .flex.-vertical-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .flex.-horizontal-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .flex.-both-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-center {
@@ -311,8 +258,7 @@ form.form > fieldset textarea {
 .box {
   background: white;
   border: 1px solid #eee;
-  -webkit-box-shadow: 0 1px 2px rgba(10, 10, 10, 0.1);
-          box-shadow: 0 1px 2px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 1px 2px rgba(10, 10, 10, 0.1);
   border-radius: 4px;
   padding: 0.5rem;
 }
@@ -345,7 +291,6 @@ form.form > fieldset textarea {
   font-size: inherit;
   border-radius: 0.3rem;
   line-height: 1.5rem;
-  -webkit-transition: background-color .2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color .2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   border: 1px solid transparent;
   background-color: #eee;
@@ -510,12 +455,8 @@ form.form > fieldset textarea {
 
 nav.navbar {
   background: #eee;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 nav.navbar > ul {
@@ -545,35 +486,22 @@ nav.navbar > ul > li > a:hover {
 }
 
 nav.navbar .navbar-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-self: flex-start;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 nav.navbar .navbar-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-self: flex-end;
 }
 
 nav.nav > ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 nav.nav > ul li {
