@@ -3,7 +3,7 @@ layout: default
 title: Utilities
 ---
 
-### Utilities
+# Utilities
 ---
 
 You can align text using the `text-right` and `text-center` classes

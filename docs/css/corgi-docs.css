@@ -599,19 +599,19 @@ nav.nav h6 {
   }
 }
 
-.highlight {
+figure.highlight {
   background-color: #f7f7f9;
   padding: 0.5rem 1rem;
   margin-bottom: 1.5rem;
 }
 
-.highlight pre {
+figure.highlight pre {
   padding: 0;
   margin-top: 0;
   overflow: auto;
 }
 
-.highlight code {
+figure.highlight code {
   background: transparent;
   margin-bottom: 0;
   background-color: transparent;

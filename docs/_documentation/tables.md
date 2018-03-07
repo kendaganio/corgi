@@ -3,7 +3,7 @@ layout: default
 title: Tables
 ---
 
-### Tables
+# Tables
 ---
 
 Tables can be styled by using the `table` class.
