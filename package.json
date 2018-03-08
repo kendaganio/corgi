@@ -1,6 +1,6 @@
 {
   "name": "corgicss",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "The css equivalent of a small and stupid log of fur.",
   "main": "corgi.css",
   "scripts": {
