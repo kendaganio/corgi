@@ -1,0 +1,18 @@
+@mixin alertify($color)
+  background: lighten($color, 25%)
+  color: darken(desaturate($color, 50%), 30%)
+
+.alert
+  background: $gray
+  padding: 1rem
+  border-radius: 5px
+  margin-bottom: 0.5rem
+
+  &.-danger
+    @include alertify($danger)
+
+  &.-primary
+    @include alertify($primary)
+
+  &.-success
+    @include alertify($success)

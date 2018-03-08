@@ -526,6 +526,28 @@ nav.nav > ul li {
   }
 }
 
+.alert {
+  background: #eee;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.alert.-danger {
+  background: #ffd2d2;
+  color: #8a2e2e;
+}
+
+.alert.-primary {
+  background: #a3d9f1;
+  color: #2f434c;
+}
+
+.alert.-success {
+  background: #9eeddb;
+  color: #2f443f;
+}
+
 main.documentation {
   margin: 0 auto;
 }
