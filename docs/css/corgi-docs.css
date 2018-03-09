@@ -283,9 +283,7 @@ form.form > fieldset textarea {
 
 .button {
   color: rgba(0, 0, 0, 0.8);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   display: inline-block;
   padding: 0.5rem 1rem;
   font-size: inherit;
@@ -528,24 +526,42 @@ nav.nav > ul li {
 
 .alert {
   background: #eee;
+  border-left: 3px solid #d5d5d5;
   padding: 1rem;
-  border-radius: 5px;
   margin-bottom: 0.5rem;
 }
 
+.alert > button.close {
+  float: right;
+  appearance: none;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.alert > button.close:hover {
+  color: inherit;
+}
+
 .alert.-danger {
-  background: #ffd2d2;
-  color: #8a2e2e;
+  background: #ffe1e1;
+  border-color: #ff5252;
+  color: #9c1c1c;
 }
 
 .alert.-primary {
-  background: #a3d9f1;
-  color: #2f434c;
+  background: #b0dff3;
+  border-color: #34ace0;
+  color: #234858;
 }
 
 .alert.-success {
-  background: #9eeddb;
-  color: #2f443f;
+  background: #abefdf;
+  border-color: #33d9b2;
+  color: #235045;
 }
 
 main.documentation {
@@ -922,4 +938,5 @@ figure.highlight code {
 .css .nt + .nt {
   color: #999;
 }
+
 /*# sourceMappingURL=corgi-docs.css.map */

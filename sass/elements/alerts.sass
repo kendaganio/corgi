@@ -1,12 +1,26 @@
 @mixin alertify($color)
-  background: lighten($color, 25%)
-  color: darken(desaturate($color, 50%), 30%)
+  background: lighten($color, 28%)
+  border-color: $color
+  color: darken(desaturate($color, 30%), 30%)
 
 .alert
   background: $gray
+  border-left: 3px solid darken($gray, 10%)
   padding: 1rem
-  border-radius: 5px
   margin-bottom: 0.5rem
+
+  > button.close
+    float: right
+    appearance: none
+    background: transparent
+    border: none
+    font-size: 1rem
+    font-weight: bold
+    cursor: pointer
+    color: rgba(0, 0, 0, 0.2)
+
+    &:hover
+      color: inherit
 
   &.-danger
     @include alertify($danger)
