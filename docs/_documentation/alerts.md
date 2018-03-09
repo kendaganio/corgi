@@ -20,10 +20,26 @@ modifiers to change it's context.
 
 {% highlight html %}
 <div class="alert">I'm boring.</div>
-<div class="alert -danger">
-  It's dangerous out there!
-  <span class="close">x</span>
-</div>
+<div class="alert -danger">It's dangerous out there!</div>
 <div class="alert -primary">Welcome, old friend.</div>
 <div class="alert -success">Good job!</div>
+{% endhighlight %}
+
+The alert component comes with a built-in close button to dismiss the alert. You
+need to add your own custom Javascript to make this work for your needs.
+
+<div class="example">
+  <div class="container preview">
+    <div class="alert -success">
+      Congratulations! Your order has been completed.
+      <button class="close">&#x2715;</button>
+    </div>
+  </div>
+</div>
+
+{% highlight html %}
+<div class="alert -success">
+  Congratulations! Your order has been completed.
+  <button class="close">&#x2715;</button>
+</div>
 {% endhighlight %}
