@@ -283,7 +283,9 @@ form.form > fieldset textarea {
 
 .button {
   color: rgba(0, 0, 0, 0.8);
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: inline-block;
   padding: 0.5rem 1rem;
   font-size: inherit;
@@ -533,7 +535,9 @@ nav.nav > ul li {
 
 .alert > button.close {
   float: right;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background: transparent;
   border: none;
   font-size: 1rem;
@@ -938,5 +942,4 @@ figure.highlight code {
 .css .nt + .nt {
   color: #999;
 }
-
 /*# sourceMappingURL=corgi-docs.css.map */
