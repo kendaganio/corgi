@@ -282,7 +282,8 @@ form.form > fieldset textarea {
 }
 
 .button {
-  color: rgba(0, 0, 0, 0.8);
+  color: #34ace0;
+  background: transparent;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -291,17 +292,32 @@ form.form > fieldset textarea {
   font-size: inherit;
   border-radius: 0.3rem;
   line-height: 1.5rem;
+  cursor: pointer;
   transition: background-color .2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   border: 1px solid transparent;
+}
+
+.button:hover, .button:active {
+  color: #177097;
+}
+
+.button.-default {
   background-color: #eee;
   border-color: #eee;
+  color: rgba(0, 0, 0, 0.8);
 }
 
-.button:hover {
-  background: #d5d5d5;
+.button.-default:hover {
+  background: #e1e1e1;
 }
 
-.button:active {
+.button.-default:hover.-fancy {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  box-shadow: 1px 3px 1px #bbbbbb;
+}
+
+.button.-default:active {
   background: #bbbbbb;
   border-color: #bbbbbb;
 }
@@ -330,7 +346,13 @@ form.form > fieldset textarea {
 }
 
 .button.-primary:hover {
-  background: #1e91c3;
+  background: #21a2d9;
+}
+
+.button.-primary:hover.-fancy {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  box-shadow: 1px 3px 1px #bbbbbb;
 }
 
 .button.-primary:active {
@@ -361,7 +383,13 @@ form.form > fieldset textarea {
 }
 
 .button.-danger:hover {
-  background: #ff1f1f;
+  background: #ff3939;
+}
+
+.button.-danger:hover.-fancy {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  box-shadow: 1px 3px 1px #bbbbbb;
 }
 
 .button.-danger:active {
@@ -392,7 +420,13 @@ form.form > fieldset textarea {
 }
 
 .button.-success:hover {
-  background: #22b794;
+  background: #26cca5;
+}
+
+.button.-success:hover.-fancy {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  box-shadow: 1px 3px 1px #bbbbbb;
 }
 
 .button.-success:active {
@@ -535,12 +569,8 @@ nav.nav > ul li {
 
 .alert > button.close {
   float: right;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: transparent;
-  border: none;
-  font-size: 1rem;
+  padding: 0;
+  line-height: 1;
   font-weight: bold;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.2);

@@ -284,7 +284,9 @@ form.form > fieldset textarea {
 .button {
   color: #34ace0;
   background: transparent;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: inline-block;
   padding: 0.5rem 1rem;
   font-size: inherit;
@@ -310,7 +312,8 @@ form.form > fieldset textarea {
 }
 
 .button.-default:hover.-fancy {
-  transform: translateY(-1px);
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
   box-shadow: 1px 3px 1px #bbbbbb;
 }
 
@@ -347,7 +350,8 @@ form.form > fieldset textarea {
 }
 
 .button.-primary:hover.-fancy {
-  transform: translateY(-1px);
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
   box-shadow: 1px 3px 1px #bbbbbb;
 }
 
@@ -383,7 +387,8 @@ form.form > fieldset textarea {
 }
 
 .button.-danger:hover.-fancy {
-  transform: translateY(-1px);
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
   box-shadow: 1px 3px 1px #bbbbbb;
 }
 
@@ -419,7 +424,8 @@ form.form > fieldset textarea {
 }
 
 .button.-success:hover.-fancy {
-  transform: translateY(-1px);
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
   box-shadow: 1px 3px 1px #bbbbbb;
 }
 
@@ -966,5 +972,4 @@ figure.highlight code {
 .css .nt + .nt {
   color: #999;
 }
-
 /*# sourceMappingURL=corgi-docs.css.map */
