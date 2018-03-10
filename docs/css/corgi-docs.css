@@ -283,6 +283,7 @@ form.form > fieldset textarea {
 
 .button {
   color: #34ace0;
+  background: transparent;
   appearance: none;
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -562,10 +563,8 @@ nav.nav > ul li {
 
 .alert > button.close {
   float: right;
-  appearance: none;
-  background: transparent;
-  border: none;
-  font-size: 1rem;
+  padding: 0;
+  line-height: 1;
   font-weight: bold;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.2);

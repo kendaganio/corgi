@@ -31,15 +31,15 @@ need to add your own custom Javascript to make this work for your needs.
 <div class="example">
   <div class="container preview">
     <div class="alert -success">
+      <button class="button close">&#x2715;</button>
       Congratulations! Your order has been completed.
-      <button class="close">&#x2715;</button>
     </div>
   </div>
 </div>
 
 {% highlight html %}
 <div class="alert -success">
+  <button class="button close">&#x2715;</button>
   Congratulations! Your order has been completed.
-  <button class="close">&#x2715;</button>
 </div>
 {% endhighlight %}
