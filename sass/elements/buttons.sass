@@ -1,20 +1,13 @@
-@mixin button($color) 
-  color: $baseFontColor
-  appearance: none
-  display: inline-block
-  padding: 0.5rem 1rem
-  font-size: inherit
-  border-radius: 0.3rem
-  line-height: 1.5rem
-  transition: background-color .2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out
-  border: 1px solid transparent
-
 @mixin buttonColorize($color)
   background-color: $color
   border-color: $color
 
   &:hover
-    background: darken($color, 10%)
+    background: darken($color, 5%)
+
+    &.-fancy
+      transform: translateY(-1px)
+      box-shadow: 1px 3px 1px darken(#eee, 20%)
 
   &:active
     background: darken($color, 20%)
@@ -34,8 +27,23 @@
     color: white
 
 .button
-  @include button($buttonDefault)
-  @include buttonColorize($buttonDefault)
+  color: $primary
+  appearance: none
+  display: inline-block
+  padding: 0.5rem 1rem
+  font-size: inherit
+  border-radius: 0.3rem
+  line-height: 1.5rem
+  cursor: pointer
+  transition: background-color .2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out
+  border: 1px solid transparent
+
+  &:hover, &:active
+    color: darken($primary, 20%)
+
+  &.-default
+    @include buttonColorize($buttonDefault)
+    color: $baseFontColor
 
   &.-outline
     @include outlineColorize($buttonDefault)
