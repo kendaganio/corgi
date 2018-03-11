@@ -61,3 +61,41 @@ the classes `.navbar-left` and `.navbar-right`. By default the `ul` element will
   </ul>
 </nav>
 {% endhighlight %}
+
+
+#### Stacked Nav
+
+`nav` elements with the `.nav` class will create a vertically stacked list.
+
+<div class="example">
+  <div class="container preview">
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="" target="_blank">Alerts</a>
+        </li>
+        <li>
+          <a href="" target="_blank">Buttons</a>
+        </li>
+        <li>
+          <a href="" target="_blank">Content</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+{% highlight html %}
+<nav class="nav">
+  <ul>
+    <li>
+      <a href="" target="_blank">Alerts</a>
+    </li>
+    <li>
+      <a href="" target="_blank">Buttons</a>
+    </li>
+    <li>
+      <a href="" target="_blank">Content</a>
+    </li>
+  </ul>
+</nav>
+{% endhighlight %}
