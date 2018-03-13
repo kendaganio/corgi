@@ -6,7 +6,7 @@ title: Buttons
 # Buttons
 ---
 
-You may attach the `button` to class to an input, button, or anchor element.
+You may attach the `.button` to class to an input, button, or anchor element.
 
 <div class="example">
   <div class="container preview">

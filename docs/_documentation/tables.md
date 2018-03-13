@@ -6,7 +6,7 @@ title: Tables
 # Tables
 ---
 
-Tables can be styled by using the `table` class.
+Tables can be styled by using the `.table` class.
 <div class="example">
   <div class="container preview">
     <table class="table">

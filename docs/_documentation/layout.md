@@ -60,7 +60,7 @@ inside, and they will alway span equal width. This is all possible thanks to [fl
 </div> 
 {% endhighlight %}
 
-The `columns` class comes with the `-unpadded` modifier to remove default padding.
+The `.columns` class comes with the `-unpadded` modifier to remove default padding.
 <div class="example">
   <div class="preview">
     <div class="columns -unpadded">
@@ -85,8 +85,8 @@ The `columns` class comes with the `-unpadded` modifier to remove default paddin
 </div> 
 {% endhighlight %}
 
-You may nest a `columns` container inside a `column` and it will take the width of the parent column
-and make equal width children. It's a good idea to add the `-unpadded` modifier to the nested `columns` 
+You may nest a `.columns` container inside a `.column` and it will take the width of the parent column
+and make equal width children. It's a good idea to add the `-unpadded` modifier to the nested `.columns` 
 element to lessen padception.
 
 <div class="example">
