@@ -31,6 +31,23 @@ a reference so you can tweak elements the way you want them to look.
 <h6>This is an h6</h6>
 {% endhighlight %}
 
+### Blockquotes
+<div class="example">
+  <div class="container preview">
+    <blockquote>
+      <h5>Help me Obi Wan Kenobi, you are my only hope</h5>
+      <cite>Princess Leia</cite>
+    </blockquote>
+  </div>
+</div>
+
+{% highlight html %}
+<blockquote>
+  <h5>Help me Obi Wan Kenobi, you are my only hope</h5>
+  <cite>Princess Leia</cite>
+</blockquote>
+{% endhighlight %}
+
 ### Text Elements
 
 Paragraphs are given a 1.6 line-height, and bottom margin for separation. 

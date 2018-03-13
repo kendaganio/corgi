@@ -67,6 +67,20 @@ img {
   max-width: 100%;
 }
 
+blockquote {
+  padding: 0.5rem 1rem;
+  border-left: 8px solid #eee;
+}
+
+blockquote cite {
+  font-style: normal;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+blockquote cite:before {
+  content: "\2014 \00A0";
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   font-weight: normal;
@@ -284,9 +298,7 @@ form.form > fieldset textarea {
 .button {
   color: #34ace0;
   background: transparent;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   display: inline-block;
   padding: 0.5rem 1rem;
   font-size: inherit;
@@ -312,8 +324,7 @@ form.form > fieldset textarea {
 }
 
 .button.-default:hover.-fancy {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  transform: translateY(-1px);
   box-shadow: 1px 3px 1px #bbbbbb;
 }
 
@@ -350,8 +361,7 @@ form.form > fieldset textarea {
 }
 
 .button.-primary:hover.-fancy {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  transform: translateY(-1px);
   box-shadow: 1px 3px 1px #bbbbbb;
 }
 
@@ -387,8 +397,7 @@ form.form > fieldset textarea {
 }
 
 .button.-danger:hover.-fancy {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  transform: translateY(-1px);
   box-shadow: 1px 3px 1px #bbbbbb;
 }
 
@@ -424,8 +433,7 @@ form.form > fieldset textarea {
 }
 
 .button.-success:hover.-fancy {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  transform: translateY(-1px);
   box-shadow: 1px 3px 1px #bbbbbb;
 }
 
@@ -972,4 +980,5 @@ figure.highlight code {
 .css .nt + .nt {
   color: #999;
 }
+
 /*# sourceMappingURL=corgi-docs.css.map */
