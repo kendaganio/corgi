@@ -19,22 +19,22 @@ form.form
           margin-right: 0.6rem
 
     input[type=text], input[type=email], input[type=number], input[type=password], 
-    input[type=search], input[type=url], input[type=tel],
-    select, textarea
-      background: white
-      font-size: inherit
-      line-height: 1.5
-      padding: 0.2rem 0.5rem
-      border: 1px solid #d1d1d1
-      border-radius: 0.2rem
-      height: 2.5rem
-      width: 100%
-      margin-bottom: 0.8rem
-      color: inherit
+    input[type=search], input[type=url], input[type=tel], select, textarea
+      &.control
+        background: white
+        font-size: inherit
+        line-height: 1.5
+        padding: 0.2rem 0.5rem
+        border: 1px solid #d1d1d1
+        border-radius: 0.2rem
+        height: 2.5rem
+        width: 100%
+        margin-bottom: 0.8rem
+        color: inherit
 
-      &:focus
-        outline: 0
-        border-color: $primary
+        &:focus
+          outline: 0
+          border-color: $primary
 
     textarea
       min-height: 4.5rem

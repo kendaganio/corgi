@@ -6,25 +6,25 @@ title: Forms
 # Forms
 ---
 
-Forms are not styled by default, you need to add a `.form` class to enable styling.
-Form control elements should be wrapped in a `fieldset` tag.
+To style a form add a `.form` class to the form element. Input elements should be 
+inside a `fieldset` element, and with a `.control` class.
 
 <div class="example">
   <div class="container preview">
     <form class="form">
-      <fieldset id="" class="">
+      <fieldset>
         <label for="name">Name</label>
-        <input type="text" name="name" value="" id="name" placeholder="My nam jeff.">
+        <input type="text" class="control" name="name" value="" id="name" placeholder="My nam jeff.">
 
         <label for="color">Color</label>
-        <select name="color" id="color" size="1">
+        <select class="control" name="color" id="color" size="1">
           <option value="red">Red</option>
           <option value="green">Green</option>
           <option value="blue">Blue</option>
         </select>
       
         <label for="description">Description</label>
-        <textarea name="description" rows="10" cols="40">
+        <textarea name="description" class="control" rows="10" cols="40">
 This is some really long text
         </textarea>
         
@@ -46,19 +46,19 @@ This is some really long text
 
 {% highlight html %}
 <form class="form">
-  <fieldset id="" class="">
+  <fieldset>
     <label for="name">Name</label>
-    <input type="text" name="name" value="" id="name" placeholder="My nam jeff.">
+    <input type="text" class="control" name="name">
 
     <label for="color">Color</label>
-    <select name="color" id="color" size="1">
+    <select class="control" name="color" id="color" size="1">
       <option value="red">Red</option>
       <option value="green">Green</option>
       <option value="blue">Blue</option>
     </select>
   
     <label for="description">Description</label>
-    <textarea name="description" rows="10" cols="40">
+    <textarea name="description" class="control" rows="10" cols="40">
       This is some really long text
     </textarea>
     

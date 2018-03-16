@@ -218,9 +218,8 @@ form.form > fieldset label.checkbox > input {
   margin-right: 0.6rem;
 }
 
-form.form > fieldset input[type=text], form.form > fieldset input[type=email], form.form > fieldset input[type=number], form.form > fieldset input[type=password],
-form.form > fieldset input[type=search], form.form > fieldset input[type=url], form.form > fieldset input[type=tel],
-form.form > fieldset select, form.form > fieldset textarea {
+form.form > fieldset input[type=text].control, form.form > fieldset input[type=email].control, form.form > fieldset input[type=number].control, form.form > fieldset input[type=password].control,
+form.form > fieldset input[type=search].control, form.form > fieldset input[type=url].control, form.form > fieldset input[type=tel].control, form.form > fieldset select.control, form.form > fieldset textarea.control {
   background: white;
   font-size: inherit;
   line-height: 1.5;
@@ -233,9 +232,8 @@ form.form > fieldset select, form.form > fieldset textarea {
   color: inherit;
 }
 
-form.form > fieldset input[type=text]:focus, form.form > fieldset input[type=email]:focus, form.form > fieldset input[type=number]:focus, form.form > fieldset input[type=password]:focus,
-form.form > fieldset input[type=search]:focus, form.form > fieldset input[type=url]:focus, form.form > fieldset input[type=tel]:focus,
-form.form > fieldset select:focus, form.form > fieldset textarea:focus {
+form.form > fieldset input[type=text].control:focus, form.form > fieldset input[type=email].control:focus, form.form > fieldset input[type=number].control:focus, form.form > fieldset input[type=password].control:focus,
+form.form > fieldset input[type=search].control:focus, form.form > fieldset input[type=url].control:focus, form.form > fieldset input[type=tel].control:focus, form.form > fieldset select.control:focus, form.form > fieldset textarea.control:focus {
   outline: 0;
   border-color: #34ace0;
 }
