@@ -646,6 +646,12 @@ header.banner > h1 {
   margin: 0;
 }
 
+header.banner .subtitle {
+  font-size: 0.9rem;
+  color: #a4b0be;
+  line-height: 1.2;
+}
+
 aside {
   background: #eee;
   text-align: right;
