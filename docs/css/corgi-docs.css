@@ -132,7 +132,7 @@ p {
   padding: 0;
 }
 
-.columns > .column {
+.columns .column {
   padding: 0.5rem;
 }
 
@@ -142,7 +142,7 @@ p {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .columns > .column {
+  .columns .column {
     flex: 1;
   }
 }
@@ -152,43 +152,43 @@ p {
     display: flex;
     flex-wrap: wrap;
   }
-  .columns > .column {
+  .columns .column {
     flex: 1 1 0;
   }
-  .columns > .column.-one {
+  .columns .column.-one {
     flex: 0 0 8.3333%;
   }
-  .columns > .column.-two {
+  .columns .column.-two {
     flex: 0 0 16.6667%;
   }
-  .columns > .column.-three {
+  .columns .column.-three {
     flex: 0 0 25%;
   }
-  .columns > .column.-four {
+  .columns .column.-four {
     flex: 0 0 33.3333%;
   }
-  .columns > .column.-five {
+  .columns .column.-five {
     flex: 0 0 41.6667%;
   }
-  .columns > .column.-six {
+  .columns .column.-six {
     flex: 0 0 50%;
   }
-  .columns > .column.-seven {
+  .columns .column.-seven {
     flex: 0 0 58.3333%;
   }
-  .columns > .column.-eight {
+  .columns .column.-eight {
     flex: 0 0 66.6667%;
   }
-  .columns > .column.-nine {
+  .columns .column.-nine {
     flex: 0 0 75%;
   }
-  .columns > .column.-ten {
+  .columns .column.-ten {
     flex: 0 0 83.3333%;
   }
-  .columns > .column.-eleven {
+  .columns .column.-eleven {
     flex: 0 0 91.6667%;
   }
-  .columns > .column.-twelve {
+  .columns .column.-twelve {
     flex: 0 0 100%;
   }
 }
@@ -296,9 +296,7 @@ form.form > fieldset textarea {
 .button {
   color: #34ace0;
   background: transparent;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   display: inline-block;
   padding: 0.5rem 1rem;
   font-size: inherit;
@@ -324,8 +322,7 @@ form.form > fieldset textarea {
 }
 
 .button.-default:hover.-fancy {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  transform: translateY(-1px);
   box-shadow: 1px 3px 1px #bbbbbb;
 }
 
@@ -362,8 +359,7 @@ form.form > fieldset textarea {
 }
 
 .button.-primary:hover.-fancy {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  transform: translateY(-1px);
   box-shadow: 1px 3px 1px #bbbbbb;
 }
 
@@ -399,8 +395,7 @@ form.form > fieldset textarea {
 }
 
 .button.-danger:hover.-fancy {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  transform: translateY(-1px);
   box-shadow: 1px 3px 1px #bbbbbb;
 }
 
@@ -436,8 +431,7 @@ form.form > fieldset textarea {
 }
 
 .button.-success:hover.-fancy {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  transform: translateY(-1px);
   box-shadow: 1px 3px 1px #bbbbbb;
 }
 
@@ -990,4 +984,5 @@ figure.highlight code {
 .css .nt + .nt {
   color: #999;
 }
+
 /*# sourceMappingURL=corgi-docs.css.map */
