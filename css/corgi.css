@@ -593,9 +593,9 @@ nav.nav > ul li {
 }
 
 .alert.-danger {
-  background: #10ff10;
-  border-color: green;
-  color: black;
+  background: #ffe1e1;
+  border-color: #ff5252;
+  color: #9c1c1c;
 }
 
 .alert.-primary {
